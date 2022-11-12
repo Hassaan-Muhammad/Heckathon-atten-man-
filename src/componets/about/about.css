@@ -1,0 +1,33 @@
+.head{
+    display: flex;
+    justify-content: center;
+}
+
+.studentForm{
+    border: 1px solid black;
+    width: max-content;
+    margin: 10px;
+      /* glass morphism */
+      background: rgba(255, 255, 255, 0.35);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      backdrop-filter: blur(6.5px);
+      -webkit-backdrop-filter: blur(6.5px);
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.classAssign{
+    height: 30px;
+    width: 250px;
+    margin: 5px;
+    margin-left: 10px;
+   
+}
+.classButtonStudent{
+    width: 80px;
+    height: 30px;
+    margin: 5px;
+    margin-left: 100px;
+    border: 1px solid rgb(47, 255, 75);;
+    border-radius: 150px;
+    background-color: rgb(47, 255, 75);
+}

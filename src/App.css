@@ -1,14 +1,14 @@
 *{
   margin: 0px;
   padding: 0px;
-}
+
+} 
 .navBar {
   display: flex;
   list-style-type: none;
   justify-content: right;
   background-color: rgb(47, 255, 75);
   height: max-content;
-  
 
 }
 a{

@@ -63,8 +63,8 @@ function App() {
       {
         (isLogin) ?
           <ul className='navBar'>
-            <li className='navComp'> <Link to={"/"} >HOME</Link></li>
-            <li className='navComp'> <Link to={"about"} >ABOUT </Link></li>
+            <li className='navComp'> <Link to={"/"} >CLASS ASSIGNING</Link></li>
+            <li className='navComp'> <Link to={"about"} >STUDENT DATA </Link></li>
             <li > <button className='navButton' onClick={logoutHandler}> LOGOUT</button></li>
           </ul>
           :

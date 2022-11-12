@@ -159,11 +159,13 @@ function Home() {
                     <br />
                     <input className="classAssign" type="number" placeholder="Enter Batch Number" onChange={(e) => { setBatchNum(e.target.value) }}></input>
                     <br />
-                    <button type="submit">Post</button>
+                    <button className="classButtonStudent" type="submit">Post</button>
                 </form>
             </div>
-            <div>
+
             <h2>CLASS DATA: </h2>
+
+            <div className='mainPost' >
                 {(isLoading) ? "loading..." : ""}
 
                 {posts.map((eachPost, i) => (
