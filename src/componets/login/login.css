@@ -1,0 +1,48 @@
+
+
+.loginMain {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+
+}
+.loginForm {
+    border: 1px solid black;
+    width: max-content;
+    padding: 50px;
+    /* glass morphism */
+    background: rgba(255, 255, 255, 0.35);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(6.5px);
+    -webkit-backdrop-filter: blur(6.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+}
+
+.input1 {
+    height: 30px;
+    width: 250px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.loginButton {
+    width: 80px;
+    height: 30px;
+    color: white;
+    margin-left: 90px;
+    font-weight: 200;
+    border: 1px solid rgb(47, 255, 75);;
+    border-radius: 150px;
+    background-color: rgb(47, 255, 75);
+    font-size: large;
+
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    color: rgb(47, 255, 75);
+   
+}
