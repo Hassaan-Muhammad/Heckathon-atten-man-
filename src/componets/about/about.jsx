@@ -46,14 +46,6 @@ function About() {
 
 
 
-
-
-
-
-
-
-
-
   const [Editing, setEditing] = useState({
     editingId: null,
     editingText: " "
@@ -118,24 +110,7 @@ function About() {
 
 
   useEffect(() => {
-    //ONE TIME READ DATA
-    // const getData = async () => {
-    //   const querySnapshot = await getDocs(collection(db, "post"));
-    //   querySnapshot.forEach((doc) => {
-    //     console.log(`${doc.id} => `, doc.data());
-
-
-    //     setposts((prev) => {
-    //       //Array clonning
-
-    //       let newArray = [...prev, doc.data()];
-
-    //       return newArray
-    //     });
-
-    //   });
-    // }
-    // getData();
+    
 
 
 
@@ -224,20 +199,6 @@ function About() {
   }
 
 
-  // const edit = (postId,text) => {
-
-  //   const updateState =
-  //     post.map(eachItem => {
-  //       if (eachItem.id === postId) {
-  //         return { ...eachItem, IsEditing: !eachItem.IsEditing }
-  //       }
-  //       else {
-  //         return eachItem
-  //       }
-  //     })
-
-  //   setposts(updateState)
-  // }
 
 
   return (

@@ -33,7 +33,8 @@ function Home() {
 
     const [editing, setEditing] = useState({
         editingId: null,
-        editingText: ""
+        editingText: "",
+        editingClasstiming:""
     })
 
 
@@ -125,12 +126,14 @@ function Home() {
 
         await updateDoc(doc(db, "posts", editing.editingId), {
             text: editing.editingText,
+            ClassTiming: editing.editingClasstiming
            
         });
 
         setEditing({
             editingId: null,
             editingText: "",
+            editingClasstiming:""
            
         })
 
@@ -194,9 +197,10 @@ function Home() {
                                             setEditing({
                                                 ...editing,
                                                 editingText: e.target.value,
-                                                
+                                                editingClasstiming: e.target.value
                                             })
                                         }}
+                                        
                                         placeholder="please enter updated value" />
 
                                     <button type="submit">Update</button>
@@ -232,6 +236,7 @@ function Home() {
                                     editingText: eachPost?.text,
                                   
                                 })
+                                
 
                             }} >Edit</button>
                         }
