@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 import Home from "./componets/home/home";
 import About from "./componets/about/about";
 import Login from './componets/login/login';
-import Signup from './componets/signup/signup';
+
 
 import { getAuth, onAuthStateChanged, signOut } from "firebase/auth";
 
@@ -13,7 +13,7 @@ import { getAuth, onAuthStateChanged, signOut } from "firebase/auth";
 function App() {
 
   const [isLogin, setisLogin] = useState(false)
-  const [fullname, setfullname] = useState(false)
+
 
 
   useEffect(() => {
@@ -26,9 +26,6 @@ function App() {
         const uid = user.uid;
         console.log("auth login:", uid)
         setisLogin(true)
-
-        console.log("Auth username", auth.currentUser.displayName)
-        setfullname(auth.currentUser.displayName)
 
         // ...
       } else {
@@ -62,21 +59,17 @@ function App() {
   return (
     <div>
 
-      {/* <button onClick={() => { (setisLogin(!isLogin)) }}>Toggle login test</button> */}
 
       {
         (isLogin) ?
           <ul className='navBar'>
-            <li> <Link to={"/"} >Home</Link></li>
-            <li> <Link to={"about"} >About</Link></li>
-            <li> <button onClick={logoutHandler}> Logout</button></li>
-            <li>{fullname}</li>
+            <li className='navComp'> <Link to={"/"} >HOME</Link></li>
+            <li className='navComp'> <Link to={"about"} >ABOUT </Link></li>
+            <li > <button className='navButton' onClick={logoutHandler}> LOGOUT</button></li>
           </ul>
           :
-          <ul className='navBar'>
-            <li> <Link to={"login"} >Login</Link></li>
-            <li> <Link to={"signup"} >signup</Link></li>
-          </ul>
+          null
+         
       }
 
 
@@ -89,7 +82,7 @@ function App() {
         :
         <Routes>
           <Route path="/" element={<Login />} />
-          <Route path="signup" element={<Signup />} />
+          {/* <Route path="signup" element={<Signup />} /> */}
           <Route path="*" element={<Navigate to={"/"} replace={true} />} />
         </Routes>
       }

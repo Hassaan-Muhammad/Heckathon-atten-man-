@@ -127,10 +127,7 @@ function Home() {
                 <textarea
                     type="text"
                     placeholder="What's in your mind..."
-                    onChange={(e) => {
-                        setPostText(e.target.value)
-                    }}
-                />
+                    onChange={(e) => { setPostText(e.target.value) }} />
                 <br />
                 <button type="submit">Post</button>
             </form>
@@ -142,9 +139,7 @@ function Home() {
                     <div className="post" key={i}>
 
                         <h3
-                            className="title"
-                            href={eachPost?.url}
-                            target="_blank" rel="noreferrer"
+                            className="title" href={eachPost?.url} target="_blank" rel="noreferrer"
                         >
                             {(eachPost.id === editing.editingId) ?
                                 <form onSubmit={updatePost}>
